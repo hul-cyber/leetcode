@@ -4,6 +4,9 @@ import java.util.*;
 
 /**
  * 递归回溯解决N皇后问题
+ *
+ * 时间复杂度O(N!) 空间复杂度O(N)
+ * 关于如何计算N皇后问题的时间复杂度,可以参考这篇博客:https://blog.csdn.net/u013009552/article/details/107064859
  */
 public class SolveNQueens2 {
     public static void main(String[] args) {
