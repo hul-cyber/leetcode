@@ -6,8 +6,10 @@ import java.util.List;
 
 import static java.lang.StrictMath.abs;
 
-
-public class SolveNQueens {
+/**
+ * 非递归回溯解决N皇后问题
+ */
+public class SolveNQueens1 {
     public static void main(String[] args) {
         solveNQueens(4);
     }
@@ -67,7 +69,7 @@ public class SolveNQueens {
         return numList;
     }
 
-    /*如果一个皇后能放在第k行第a[k]列，则返回真(1)，否则返回假(0)*/
+    //如果一个皇后能放在第k行第a[k]列，则返回真(1)，否则返回假(0)
     private static boolean valid(Integer[] a, int k) {
         int i;
         for (i = 0; i < k; ++i)
