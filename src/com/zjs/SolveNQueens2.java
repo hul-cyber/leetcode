@@ -3,7 +3,7 @@ package com.zjs;
 import java.util.*;
 
 /**
- * 递归回溯解决N皇后问题
+ * 递归回溯解决N皇后j问题
  */
 public class SolveNQueens2 {
     public static void main(String[] args) {
