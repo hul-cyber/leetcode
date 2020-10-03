@@ -4,8 +4,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- *  回溯法求解机器人移动范围
- *  时间复杂度: 空间的复杂度:
+ *  深度优先遍历(使用回溯法)求解机器人移动范围
+ *  最坏情况下: 时间复杂度:O(MN) 空间的复杂度:O(MN)
  *  题目链接: https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/
  */
 public class RobotMovRange {
@@ -29,7 +29,7 @@ public class RobotMovRange {
         } else {
             //当前位置
             Position currentPos = new Position(x, y);
-            if (((sumOfDigits(x) + sumOfDigits(y)) <= k) && !arrived.contains(currentPos)) {
+            if (((sumOfDigits1(x) + sumOfDigits1(y)) <= k) && !arrived.contains(currentPos)) {
                 //如果当前位置满足数位之和小于等于k,并且还没有到达过
                 //将该位置加入到已到达
                 arrived.add(currentPos);
@@ -73,7 +73,7 @@ public class RobotMovRange {
     }
 
     //计算数位之和
-    public static int sumOfDigits(int num) {
+    public static int sumOfDigits1(int num) {
         if(num == 100) {
             //等于100时
             return 1;
@@ -84,5 +84,15 @@ public class RobotMovRange {
             //当小于 10时
             return num;
         }
+    }
+
+    //另外一种计算数位之和的方法
+    public static int sumOfDigits2(int num) {
+        int sum = 0;
+        while (num > 0) {
+            sum += num % 10;
+            num /= 10;
+        }
+        return sum;
     }
 }
