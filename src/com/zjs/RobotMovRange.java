@@ -29,11 +29,12 @@ public class RobotMovRange {
         } else {
             //当前位置
             Position currentPos = new Position(x, y);
-            if (((sumOfDigits1(x) + sumOfDigits1(y)) <= k) && !arrived.contains(currentPos)) {
+            if (((sumOfDigits2(x) + sumOfDigits2(y)) <= k) && !arrived.contains(currentPos)) {
                 //如果当前位置满足数位之和小于等于k,并且还没有到达过
                 //将该位置加入到已到达
                 arrived.add(currentPos);
-                return search(x - 1, y, k, arrived, m, n) + search(x + 1, y, k, arrived, m, n) + search(x, y - 1, k, arrived, m, n) + search(x, y + 1, k, arrived, m, n) + 1;
+                //只需要向下和向右就可以遍历所有情况,向上和向左完全没有必要
+                return search(x + 1, y, k, arrived, m, n) + search(x, y + 1, k, arrived, m, n) + 1;
             } else {
                 return 0;
             }
