@@ -81,7 +81,7 @@ public class RobotMovRange {
             //大于等于10且小于等于99时
             return num / 10 + num % 10;
         } else {
-            //当小于10时
+            //当小于 10时
             return num;
         }
     }
