@@ -8,7 +8,7 @@ import java.util.Set;
  *  最坏情况下: 时间复杂度:O(MN) 空间的复杂度:O(MN)
  *  题目链接: https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/
  */
-public class RobotMovRange {
+public class RobotMovRange1 {
     public static void main(String[] args) {
         System.out.println(movingCount(1, 2, 1));
     }
