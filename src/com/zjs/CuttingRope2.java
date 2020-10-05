@@ -19,16 +19,17 @@ public class CuttingRope2 {
         for (int i = 0; i <= n; i++) {
             dp[i] = new BigInteger("0");
         }
-        BigInteger m = null;
-        BigInteger k = null;
+        BigInteger m;
+        BigInteger k;
         for (int i = 2; i <= n; i++) {
             for (int j = 0; j < i; j++) {
                 m = new BigInteger(Integer.toString(j));
                 k = new BigInteger(Integer.toString(i - j));
-                if ((m.multiply(dp[i - j])).compareTo(dp[i]) == 1) {
-                    dp[i] = m.multiply(dp[i - j]);
+                BigInteger multiply = m.multiply(dp[i - j]);
+                if (multiply.compareTo(dp[i]) > 0) {
+                    dp[i] = multiply;
                 }
-                if (m.multiply(k).compareTo(dp[i]) == 1) {
+                if (m.multiply(k).compareTo(dp[i]) > 0) {
                     dp[i] = m.multiply(k);
                 }
             }

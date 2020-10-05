@@ -16,7 +16,7 @@ public class Power {
     }
 
     public static double myPow(double x, int n) {
-        double result = 1.0;
+        double result;
         if (x == 0.0 && n < 0) {
             ifInvalidInput = true;
             return 0;
