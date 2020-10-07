@@ -1,8 +1,6 @@
 package com.zjs;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * 打印从1到最大的n位数
@@ -10,9 +8,9 @@ import java.util.List;
  * 最坏情况下: 时间复杂度:O(max*n) 空间复杂度:O(n) 注:用max表示最大的n位数
  * 题目链接:https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/
  */
-public class Print1ToMaxOfNDigits {
+public class Print1ToMaxOfNDigits1 {
     public static void main(String[] args) {
-        Print1ToMaxOfNDigits p = new Print1ToMaxOfNDigits();
+        Print1ToMaxOfNDigits1 p = new Print1ToMaxOfNDigits1();
         p.print1ToMaxOfNDigits(3);
     }
 
