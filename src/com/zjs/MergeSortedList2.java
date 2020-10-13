@@ -3,7 +3,7 @@ package com.zjs;
 /**
  * @ClassName MergeSortedList2
  * @Description 剑指Offer25合并两个排序的链表 题目链接:https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/
- * 递归合并
+ * 递归合并 时间复杂度O(M + N) 空间复杂度O(M + N) 较短的链表的长度为M
  * @Author zhangjusheng
  * @Date 2020/10/11 10:26
  * @Version 1.0

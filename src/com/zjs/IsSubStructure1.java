@@ -3,7 +3,7 @@ package com.zjs;
 /**
  * @ClassName IsSubStructure1
  * @Description 剑指Offer26 树的子结构 题目链接:https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/
- * 使用双递归(未优化)求解数的子结构 最坏情况下: 时间复杂度O() 空间复杂度O()
+ * 使用双递归(未优化)求解数的子结构 最坏情况下: 时间复杂度O(MN) 空间复杂度O(M) M是A中节点个数 N是B中节点的个数
  * @Author zhangjusheng
  * @Date 2020/10/11 9:51
  * @Version 1.0
