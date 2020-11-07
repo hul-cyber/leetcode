@@ -1,14 +1,14 @@
 package com.zjs;
 
 /**
- * @ClassName SingleNumbers
+ * @ClassName SingleNumber1
  * @Description 剑指Offer 56-1 数组中数字出现的次数 题目链接: https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/
  * 分组异或
  * @Author zhangjusheng
  * @Date 2020/11/3 20:19
  * @Version 1.0
  **/
-public class SingleNumbers {
+public class SingleNumber1 {
     public int[] singleNumbers(int[] nums) {
         int division = 0;
         for (int i = 0; i < nums.length; i++) {
