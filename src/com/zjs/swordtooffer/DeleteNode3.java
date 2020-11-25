@@ -16,6 +16,12 @@ public class DeleteNode3 {
         return head;
     }
 
+    public static void main(String[] args) {
+        System.out.println(Math.sqrt(Integer.MAX_VALUE));
+        Integer i = (int) Math.sqrt(Integer.MAX_VALUE) + 1;
+        System.out.println(i);
+    }
+
     public class ListNode {
         int val;
         ListNode next;
