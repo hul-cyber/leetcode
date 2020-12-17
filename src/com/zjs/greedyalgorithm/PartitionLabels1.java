@@ -1,4 +1,4 @@
-package com.zjs.greedalgorithm;
+package com.zjs.greedyalgorithm;
 
 import java.util.*;
 
