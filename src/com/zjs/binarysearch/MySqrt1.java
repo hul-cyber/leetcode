@@ -1,14 +1,14 @@
 package com.zjs.binarysearch;
 
 /**
- * @ClassName MySqrt
+ * @ClassName MySqrt1
  * @Description 68. x的平方根 题目链接: https://leetcode-cn.com/problems/sqrtx/
  * 二分查找
  * @Author zhangjusheng
  * @Date 2020/12/7 16:55
  * @Version 1.0
  */
-public class MySqrt {
+public class MySqrt1 {
 
     public int mySqrt(int x) {
         if (x == 0 || x == 1)
