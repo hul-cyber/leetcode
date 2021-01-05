@@ -2,7 +2,7 @@ package com.zjs.binarysearch;
 
 /**
  * @ClassName MySqrt2
- * @Description 68. x的平方根 题目链接: https://leetcode-cn.com/problems/sqrtx/
+ * @Description 69. x的平方根 题目链接: https://leetcode-cn.com/problems/sqrtx/
  * 暴力法
  * @Author zhangjusheng
  * @Date 2020/12/17 20:27
