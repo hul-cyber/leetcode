@@ -1,4 +1,4 @@
-package com.zjs.other;
+package com.zjs.unclassified;
 
 /**
  * @ClassName TwoSum
