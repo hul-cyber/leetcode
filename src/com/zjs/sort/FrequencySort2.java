@@ -6,13 +6,14 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @ClassName FrequencySort
- * @Description
+ * @ClassName FrequencySort2
+ * @Description 451. 根据字符出现频率排序 题目链接: https://leetcode-cn.com/problems/sort-characters-by-frequency/
+ * 桶排序
  * @Author zhangjusheng
  * @Date 2020/11/29 0:06
  * @Version 1.0
  */
-public class FrequencySort {
+public class FrequencySort2 {
 
     public String frequencySort(String s) {
         Map<Character, Integer> map = new HashMap<>();
