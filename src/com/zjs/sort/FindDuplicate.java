@@ -13,7 +13,7 @@ public class FindDuplicate {
     public int findDuplicate(int[] nums) {
         int length = nums.length;
         for (int i = 1; i < length; i++) {
-            while (nums[i] <= length && nums[nums[i] - 1] != nums[i])
+            while (nums[nums[i] - 1] != nums[i])
                 swap(nums, nums[i] - 1, i);
         }
         return nums[length - 1];
