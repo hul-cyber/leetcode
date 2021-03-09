@@ -2,7 +2,7 @@ package com.zjs.greedyalgorithm;
 
 /**
  * @ClassName CheckPossibility
- * @Description 655 非递减数列 题目链接: https://leetcode-cn.com/problems/non-decreasing-array/
+ * @Description 665 非递减数列 题目链接: https://leetcode-cn.com/problems/non-decreasing-array/
  * 贪心算法
  * @Author zhangjusheng
  * @Date 2020/12/5 11:18
